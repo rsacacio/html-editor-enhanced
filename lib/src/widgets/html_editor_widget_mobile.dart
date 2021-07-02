@@ -20,7 +20,9 @@ class HtmlEditorWidget extends StatelessWidget {
     this.callbacks,
     this.toolbar,
     this.darkMode
-  }) : super(key: key);
+  }) : super(key: key) {
+   callbacksInitialized = false;
+  }
 
   final String value;
   final double height;
